@@ -1,13 +1,13 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-   if (board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && position_taken?(board, index))
+   if (board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] )
      #&& index <= board.length && index > 0 )
     return true 
   end
-  if (position_taken?(board, index) || board != [" ", " ", " ", " ", " ", " ", " ", " ", " "])
+  if ( board != [" ", " ", " ", " ", " ", " ", " ", " ", " "])
     return false 
   end
-  if (board != [" ", " ", " ", " ", " ", " ", " ", " ", " "] && position_taken?(board, index))
+  if (board != [" ", " ", " ", " ", " ", " ", " ", " ", " "])
     return true 
   end
  
