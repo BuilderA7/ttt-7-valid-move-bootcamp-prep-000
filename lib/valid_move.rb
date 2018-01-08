@@ -1,5 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
+  
    if (board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && position_taken?(board, index))
      #&& index <= board.length && index > 0 )
     return true 
