@@ -7,7 +7,7 @@ def valid_move?(board, index)
   if (position_taken?(board, index || board != [" ", " ", " ", " ", " ", " ", " ", " ", " "])
     return false 
   end
-  if (board != [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index < board.length && index > 0)
+  if (board != [" ", " ", " ", " ", " ", " ", " ", " ", " "] && position_taken?(board, index)
     return true 
   end
  
