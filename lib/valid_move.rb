@@ -3,7 +3,7 @@ def valid_move?(board, index)
    if (board === [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index <= board.length && index > 0 )
     return true 
   end
-  if ( index < board.length && index > 0)
+  if ( index < board.length && index > 0 || board != [" ", " ", " ", " ", " ", " ", " ", " ", " "])
     return false 
   end
   if (board != [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index < board.length && index > 0)
