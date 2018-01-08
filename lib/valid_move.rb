@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
    if (index < board.length && index > 0 )
-    return false 
+    return nil
   end
   if (board === [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index < board.length && index > 0)
     return true 
